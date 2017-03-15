@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <meta charset="utf-8">
+    <title>Event Registration</title>
+    <base href="/"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/lib/jquery/jquery-ui.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" ng-controller="MainMenuController">
+            <div class="navbar-inner">
+                <ul class="nav"> 
+                    <li><a href="#" ng-click="EventsList()">Home</a></li>
+                    <li><a href="#" ng-click="createEvent()">Create Event</a></li>
+                    <li><a href="#" ng-click="EditProfile()">Edit Profile</a></li>
+                    <li><a href="#" ng-click="Sample()">Sample</a></li>
+                </ul>
+            </div>     
+        </div>
+        <ng-view></ng-view>
+    </div>
+
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/underscore-1.4.4.min.js"></script>
+    <script src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular/angular-resource.js"></script>
+    <script src="/lib/angular/angular-route.js"></script>
+    <script src="/lib/jquery/jquery-ui.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/directives/mySample.js"></script>
+    <script src="/js/directives/datekeys.js"></script>
+    <script src="/js/directives/eventThumbnail.js"></script>
+    <script src="/js/directives/session.js"></script>
+    <script src="/js/directives/upvote.js"></script>
+    <script src="/js/directives/gravatar.js"></script>
+    <script src="/js/directives/collapsible.js"></script>
+    <script src="/js/directives/datepicker.js"></script>
+    <script src="/js/controllers/EventController.js"></script>
+    <script src="/js/controllers/EditEventController.js"></script>
+    <script src="/js/controllers/EditProfileController.js"></script>
+    <script src="/js/controllers/EventListController.js"></script>
+    <script src="/js/controllers/MainMenuController.js"></script>
+    <script src="/js/services/EventData.js"></script>
+    <script src="/js/services/gravatarUrlBuilder.js"></script>
+    <script src="/js/services/UserData.js"></script>
+    <script src="/js/services/userResource.js"></script>
+    <script src="/js/filters.js"></script>
+
+</body>
+</html>
