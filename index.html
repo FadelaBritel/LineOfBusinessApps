@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en" ng-app="app">
 <head>
-    <meta charset="utf-8">
-    <title>Event Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Whiterwater Adventures</title>
     <link rel="stylesheet" href="app/css/bootstrap.css">
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" href="app/css/app.css">
@@ -11,7 +11,11 @@
 </head>
 
 <body class="container-fluid">
-    <ps-framework></ps-framework>
+    <ps-framework title="Whitewater Adventures"
+                  subtitle="Administrative App"
+                  icon-file="app/img/image.jpg">
+
+    </ps-framework>
 
     <script src="lib/jquery.min.js"></script>
     <script src="lib/underscore-1.4.4.min.js"></script>
@@ -26,6 +30,7 @@
     <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
     
     <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
 
 </body>
 </html>
