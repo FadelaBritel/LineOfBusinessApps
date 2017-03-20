@@ -31,12 +31,4 @@ describe('userData', function() {
         expect(mockUserResource.save.calledWith('bob')).toBe(true);
     }))
   })
-
-  describe('save', function(){
-    it('should save a user', inject(function(userData) {
-        userData.save('bob');
-        expect(mockUserResource.save.calledWith('bob')).toBe(true);
-    }))
-  })
-  
 });
